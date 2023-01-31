@@ -1,0 +1,496 @@
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*CSS cabeçalho*/
+
+header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-naruto {
+  display: inline-block;
+
+}
+
+.logo-naruto h1 {
+  display: inline-block;
+  margin: 16px 0;
+}
+
+nav {
+  display: inline-block;
+  position: relative;
+
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+nav a:hover {
+  color: orangered;
+  text-decoration: underline;
+
+}
+
+.redes-sociais {
+  display: inline-block;
+  position: relative;
+
+}
+
+.redes-sociais figure {
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 7px;
+  background-color: black;
+  height: 22px;
+}
+
+/*CSS corpo*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 940px;
+}
+
+/*CSS pagina dos personagens*/
+
+.escolha-temporada {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.escolha-temporada p {
+  color: black;
+  font-weight: bold;
+  margin: 0 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.escolha-temporada a {
+  text-decoration: none;
+  color: white;
+  padding: 2px;
+  background-color: black;
+  border-radius: 5px;
+
+}
+
+.escolha-temporada a:hover {
+  color: orangered;
+}
+
+.escolha-temporada p:hover {
+  transform: scale(1.2);
+
+}
+
+.personagens {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.personagens li {
+  box-sizing: border-box;
+  width: 253px;
+  padding: 15px 0;
+  margin: 1%;
+  border-color: #000000;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.personagens li:hover {
+  border-color: darkorange;
+
+}
+
+.personagens li:active {
+  border-color: darkorange;
+}
+
+.personagens li:hover img {
+  transform: scale(1.2);
+  width: auto;
+  text-align: center;
+  transition: 1s;
+
+}
+
+.personagens li:hover h2 {
+  transform: scale(1.2);
+}
+
+.personagens h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.personagens p {
+  padding: 10px;
+}
+
+/*CSS rodapé */
+
+footer {
+  mix-blend-mode: luminosity;
+  height: 84px;
+  text-align: center;
+  width: 100%;
+  background-image: url(./img/fogo.png);
+  clear: left;
+}
+
+footer img {
+  top: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.copyrigth {
+  color: black;
+  font-size: 9px;
+  font-weight: bold;
+  width: 158px;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 12px;
+  background-image: url(./img/fundofooter.png);
+}
+
+/*CSS formulario*/
+
+form {
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label,
+form legend {
+  display: block;
+  margin: 10px;
+}
+
+.input-padrao {
+  padding: 10px 20px;
+  width: 50%;
+}
+
+form input.ok {
+  display: block;
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin: 20px 0;
+  padding: 0px 10px;
+}
+
+.enviar {
+
+  width: 40%;
+  padding: 15px 0;
+  background-color: orangered;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+}
+
+.enviar:hover {
+  background-color: rgb(255, 30, 0);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background-color: #555555;
+  color: white;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/*CSS página inicial*/
+
+.menu1 {
+  display: flex;
+  /*display:flex nos permite posicionar elementos filhos um ao lado do outro*/
+}
+
+.banner {
+  width: 100%;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+.texto-principal {
+  width: 70%;
+}
+
+.texto-principal p {
+  margin: 5px 0 1em;
+}
+
+.texto-principal b {
+  font-weight: bold;
+}
+
+.jutsus {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.jutsus img {
+  height: 270px;
+  margin: 10px;
+}
+
+.jutsus ul {
+  justify-content: space-between;
+  display: flex;
+}
+
+.jutsus ul li {
+
+  margin: 0 3px;
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.jutsus ul li:hover {
+  border: solid orangered 2px;
+}
+
+.imagem-naruto1 {
+  margin: 0 0 20px 20px;
+  float: right;
+}
+
+.imagem-naruto1 img {
+  width: 200px;
+}
+
+.imagem-personagens {
+  float: left;
+}
+
+.imagem-personagens img {
+  width: 200px;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  font-family: 'Montserrat', sans-serif;
+  padding: 3em 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 166, 0, 0.90), rgba(255, 69, 0, 900), rgba(255, 255, 255, 0.10));
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.mapa-conteudo {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.mapa p {
+  margin: 0 0 2em 0;
+  text-align: center;
+}
+
+.video {
+  width: 560px;
+  margin: 2em auto;
+  box-shadow: 10px 10px 5px #000000;
+}
+
+/*CSS aside*/
+aside {
+  width: 28%;
+  padding: 0 0 5px 2px;
+  background: linear-gradient(grey, darkgrey, white)
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+aside li {
+  display: flex;
+  padding: 2px;
+  height: 30%;
+
+}
+
+aside li p {
+  width: 50%;
+  font-size: 11px;
+  padding: 13px 0 0 0;
+  margin: 0;
+  position: relative;
+}
+
+aside li p::first-letter {
+  font-weight: bolder;
+}
+
+aside li p::before {
+  content: "➣";
+}
+
+aside li:hover {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+aside li img {
+  clear: left;
+}
+
+.footer-inicial {
+  height: 84px;
+  text-align: center;
+  width: 100%;
+  background-image: url(./img/fogo.png);
+  clear: left;
+}
+
+.footer-inicial img {
+  top: 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.copyrigth-inicial {
+  color: black;
+  font-size: 9px;
+  font-weight: bold;
+  width: 158px;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 13px;
+
+}
+
+/*CSS 480px*/
+
+@media screen and (max-width: 480px) {
+
+  /*css mobile header*/
+  body,
+  main,
+  .mapa,
+  .mapa-conteudo,
+  header,
+  .jutsus,
+  .video,
+  .nav,
+  .footer-inicial,
+  .texto-principal,
+  aside,
+  .personagens {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    left: 0px;
+  }
+
+  .logo-naruto {
+    padding-left: 0px;
+  }
+
+  .logo-naruto h1 {
+    margin: 0px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  nav li {
+    margin: 0px;
+  }
+
+  /*css mobile home*/
+
+  main {
+    flex-wrap: wrap;
+  }
+
+  .menu1 {
+    flex-direction: column-reverse;
+  }
+
+  aside li {
+    text-align: center;
+  }
+
+  aside li p {
+    font-size: larger;
+  }
+
+  aside li img {
+    width: 280px;
+  }
+
+  aside li:hover {
+    font-size: 16px;
+  }
+}

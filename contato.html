@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contato - Naruto Clássico</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body style="background-image: url(./img/fundofooter.png);">
+    <header style="background-image: url(./img/fogo2.png);">
+        <div class="logo-naruto">
+            <h1> <img src="./img/logo.png" height="60px" alt="naruto2;"></h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="personagens.html">PERSONAGENS</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="redes-sociais">
+            <ul>
+                <figure class="instagram">
+                    <a href="https://www.instagram.com/naruto/">
+                        <img src="./img/instagram.png" width="23px" onmouseover="this.src='./img/color-instagram.png' "
+                            onmouseout="this.src='./img/instagram.png'">
+                    </a>
+                </figure>
+                <figure class="facebook">
+                    <a href="https://pt-br.facebook.com/narutoofficialsns/">
+                        <img src="./img/facebook.png" width="23px" onmouseover="this.src='./img/color-facebook.png' "
+                            onmouseout="this.src='./img/facebook.png'">
+                    </a>
+                </figure>
+                <figure class="twitter">
+                    <a href="https://twitter.com/naruto_anime_en">
+                        <img src="./img/twitter.png" width="23px" onmouseover="this.src='./img/color-twitter.png' "
+                            onmouseout="this.src='./img/twitter.png'">
+                    </a>
+                </figure>
+                <figure class="whatsapp">
+
+                    <img src="./img/whatsapp.png" width="23px" onmouseover="this.src='./img/color-whatsapp.png' "
+                        onmouseout="this.src='./img/whatsapp.png'">
+                </figure>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <form class="cadastro">
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX ">
+
+            <label for="email">E-mail</label>
+            <input type="mail" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" class="input-padrao" required>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset class="contato-cliente">
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="email-radio"><input type="radio" name="contato" value="email" id="email-radio">
+                    E-mail
+                </label>
+
+                <label for="telefone-radio"><input type="radio" name="contato" value="telefone"
+                        id="telefone-radio">Telefone
+                </label>
+
+
+                <label for="WhatsApp-radio"><input type="radio" name="contato" value="WhatsApp" id="WhatsApp-radio"
+                        checked>
+                    WhatsApp
+                </label>
+
+                <fieldset>
+                    <legend>Qual Horário prefere ser atendido?</legend>
+                    <select name="horario" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"> <input type="checkbox" checked> Gostaria de receber nossas novidades por
+                    E-mail?
+                </label>
+                <input type="submit" class="enviar" value="Dattebayo">
+            </fieldset>
+        </form>
+        <table>
+            <thead>
+                <th>Dia</th>
+                <th>Horario</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 19h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+
+    <footer style="background-image: url(./img/fogo.png);">
+        <img src="./img/logo.png" alt="">
+        <div class="copyrigth" style="background-image: url(./img/fundofooter.png);">
+            <p> &COPY; Copyrigth Naruto Sempre 2022</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
